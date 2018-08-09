@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*div này dùng để background-img cho toàn trang*/
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.big{
+	width: 100%;
+	height: 100%;
+	background-image: url(../Image/back8.jpg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+/*div nằm trong article để dùng background-img */
+.inside1{
+	width: auto;
+	min-height: 620px;
+	background-image: url(../Image/back.jpg);
+	background-repeat: repeat;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+/*div nằm trong inside1 để viết text lên*/
+.inside2{
+	background-color: #FFFFFF; 
+	width: auto; 
+	min-height: 620px;
+	opacity: 0.9; /*mờ để thấy nền dưới*/
+	padding: 40px; 
+	border-radius: 20px; 
+	margin:  0 auto;
+	text-align: justify;
+}
+
+
+.container{
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;	
+}
+
+
+header{
+	width: 100%;
+	height: 230px;
+	background-color: #FF9596;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	height: 30px;
+	background-color: #FBB0B2;
+	margin-bottom: 5px;
+}
+
+nav a{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	width: 256px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	line-height: 30px;
+}
+
+nav a:hover{
+	color: #000000;
+	background-color: #FC5F62;
+}
+
+article {
+	width: 70%;
+	min-height: 620px;
+	background-color: #FFD6D6;
+	color: #000000;
+	float: left;
+	margin-bottom: 5px;
+}
+
+aside{
+	width: 29.5%;
+	min-height: 620px;
+	float: right;
+	background-color: #FFD6D6;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+aside img {border-radius: 15px;}
+aside h2 {
+	color: #000000; 
+	background-color: #FBB0B2; 
+	height: 40px; 
+	margin: 0px; 
+	text-align: center; 
+	line-height: 40px;}
+aside table {padding: 10px;} 
+aside a {color: #FC5F62}
+aside a:hover {color: #408348}
+aside td {padding-left: 10px;}
+
+footer{
+	width: 100%;
+	height: 230px;
+	background-color: #FBB0B2;
+	color: #000000;
+	clear: both;
+}
+
+
+footer .footer_left{
+	width: 40%;
+	height: 200px;
+	float: left;
+	color: #474343;
+}
+
+footer .footer_right{
+	width: 20%;
+	height: 100px;
+	float: right;
+	margin-top: 40px;
+}
+
+ul{
+	list-style-type: square;
+	padding-top: 5px;
+}
+
+ul li{
+	font-size: 18px;
+	border-bottom: 2px dotted #FC5F62;
+}
+
+footer p{
+	text-align: center;
+	font-style: italic;
+	clear: both;
+}
+
+/*============================================================*/
+
+h3{
+	text-align: center;
+	color: #F9474A;
+}
+
+/*Tạo img cirle*/
+.img_cirle{
+	text-align: center;
+	border-radius: 50%;
+	float: left;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+article table td{
+	padding: 5px;
+	font-size: 20px;
+}
+
+article input{
+	width: 250px;
+	height: 30px;
+}
+
+article .btn {width: 100px;}
+
+table {
+    border-collapse: collapse;
+	text-align: center;
+	font-size: 18px;
+	border: none;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.footer_info:hover{
+	padding-left: 20px;
+	transition: 0.3s;
+	color: teal;
+	background-color: black;
+}
+
+/*===================================================*/
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 31%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container1 {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container1::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}

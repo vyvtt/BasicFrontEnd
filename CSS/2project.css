@@ -1,0 +1,404 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*phủ toàn màn hình */
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+
+
+/*background-img cho toàn trang*/
+.big{
+	width: 100%;
+	height: 100%;
+	background-image: url(../Image/back8.jpg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+/*div nằm trong article để dùng background-img */
+.inside1{
+	width: auto;
+	min-height: 1100px;
+	background-image: url(../Image/back.jpg);
+	background-repeat: repeat;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+/*div nằm trong inside1 để viết text lên*/
+.inside2{
+	background-color: #ede9ce; 
+	width: auto; 
+	min-height: 1100px;
+	opacity: 1; /*mờ để thấy nền dưới*/
+	padding: 10px; 
+	border-radius: 20px; 
+	margin:  0 auto;
+	text-align: justify;
+}
+
+
+.container{
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+header{
+	width: 100%;
+	height: 230px;
+	background-color: #FF9596;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	height: 30px;
+	background-color: #535B58;
+	margin-bottom: 5px;	
+}
+
+nav a{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	width: 256px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	line-height: 30px;
+	transition: 0.5s;
+}
+
+nav a:hover{
+	color: #000000;
+	background-color: #c7ad88;
+	transition: 0.5s;
+}
+
+nav a.active{
+	background-color: #ede9ce;
+	color: #000000;
+}
+
+
+article {
+	width: 70%;
+	min-height: 620px;
+	background-color: #FFD6D6;
+	color: #000000;
+	float: left;
+	margin-bottom: 5px;
+}
+
+
+aside{
+	width: 29.5%;
+	min-height: 620px;
+	float: right;
+	background-color: #64706C;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+aside img {border-radius: 15px;}
+
+aside h2 {
+	color: #A2FB7E; 
+	background-color: #535B58; 
+	height: 40px; 
+	margin: 0px; 
+	text-align: center; 
+	line-height: 40px;}
+
+aside input{	
+	width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+	margin: 7px 0px 7px 0px;
+	padding-left: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #ede9ce;
+}
+
+aside input:focus{
+	background-color: white;
+	transition: 0.5s;
+}
+
+.search{
+	width: 100%;
+	padding-left: 38px;
+}
+
+aside table {
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+} 
+aside a {color: #A2FB7E}
+aside a:hover {color: #408348}
+aside td {padding-left: 10px;}
+
+footer{
+	width: 100%;
+	height: 350px;
+	background-color: #64706c;
+	color: #000000;
+	clear: both;
+}
+
+footer .footer_left{
+	width: 50%;
+	height: 320px;
+	float: left;
+	color: #FFFFFF;
+}
+
+.footer_info:hover{
+	background-color: #535B58;
+	color: #A2FB7E;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+footer .footer_right{
+	width: 25%;
+	height: 60px;
+	float: right;
+	margin-top: 20px;
+	
+}
+
+ul{
+	list-style-type: square;
+	padding-top: 5px;
+}
+
+ul li{
+	font-size: 18px;
+	border-bottom: 2px dotted #A2FB7E;
+}
+
+
+footer p{
+	text-align: center;
+	font-style: italic;
+	clear: both;
+	color: #A2FB7E;
+	padding-top: 10px;
+}
+
+footer .footer_bottom{
+	width: 100%;
+	height: 40px;
+	clear: both;
+	background-color: #535B58;
+	color: #A2FB7E;
+}
+
+/*=======================================================*/
+
+h3{
+	text-align: center;
+	color: #F79C9E;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #c7ad88;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+	/*position so với khung sản phẩm*/
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 103%;    
+	/*fade*/
+	opacity: 0; 
+    transition: opacity 1s;
+	/*text*/
+	font-size: 18px;
+ 	line-height: 25px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #c7ad88 transparent transparent;
+	
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+	z-index: 30 /*nâng z lên cao để đè lên mọi nội dung*/;
+	opacity: 1;	
+}
+
+/**************************************************************/
+
+.contact{
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+.contact:hover{
+	opacity: 1;
+	transition: 0.2s;
+	width: 70px;
+	height: 70px;
+}
+
+aside tr:hover{
+	background-color: #535B58;
+	transition: 0.5s;
+}
+
+
+/*---------------------------------------------------------*/
+
+.containerStore {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.imageStore {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #535B58;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: .5s ease;
+	opacity: 0.8;
+}
+
+.containerStore:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 18px;
+	padding: 20px 20px 20px 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/*---------------------------------------------------------*/
+
+.containerStoreSmall {
+	position: relative;
+	width: 32%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 1%
+}
+
+.imageStoreSmall {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+
+.containerStoreSmall:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+/*---------------------------------------------------------*/
+
+.containerStoreLast {
+	clear: both;
+	position: relative;
+	width: 100%;
+	height: 180px;
+	margin-bottom: 3px;
+
+}
+
+.imageStoreLast {
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+
+
+.overlayLast {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #535B58;
+	overflow: hidden;
+	width: 0;
+	height: 180px;
+	transition: 0.2s ease;
+	opacity: 0.8;
+}
+
+.containerStoreLast:hover .overlayLast {
+  	width: 100%;
+}
+
+
+.textLast {
+	color: white;
+	font-size: 16px;
+	position: absolute;
+	overflow: hidden;
+	padding: 30px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.info{
+	font-weight: bold;
+	color: #F79C9E;
+	font-size: 16px;
+	text-decoration: none;
+}
+.info:hover{
+	font-size: 25px;
+	transition: 0.5s;
+	color: #4AF968;
+}
